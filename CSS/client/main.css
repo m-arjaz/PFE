@@ -1,0 +1,41 @@
+    body {
+      font-family: Arial, sans-serif;
+      background: #fafafa;
+      margin: 0;
+      padding: 0px;
+      background: url('../../src/bus4.jpg') center center no-repeat;
+      background-size: cover;
+      height: 655px;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 40px;
+      background: #0097a7;
+      border-bottom: 3px solid #0097a7;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: orange;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      align-items: center;
+      padding-top: 13px;
+    }
+
+    .top-right {
+      display: flex;
+      
+      gap: 15px;
+    }

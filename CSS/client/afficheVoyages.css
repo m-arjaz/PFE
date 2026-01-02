@@ -1,0 +1,215 @@
+body {
+      font-family: Arial, sans-serif;
+      background: #fafafa;
+      margin: 0;
+      padding: 0px;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 40px;
+      background: #0097a7;
+      border-bottom: 3px solid #0097a7;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: orange;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+    }
+    
+    .top-right {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .date-tabs {
+      padding-top: 20px ;
+      display: flex;
+      justify-content: space-between;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .date-tabs button {
+      flex: 1;
+      padding: 10px;
+      border: 1px solid #ddd;
+      background-color: #fff;
+      cursor: pointer;
+    }
+
+    .date-tabs .active {
+      background-color: #f2f2f2;
+      font-weight: bold;
+      border-bottom: 3px solid orange;
+    }
+
+    .steps {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      max-width: 700px;
+      margin: 30px auto 20px;
+      font-size: 14px;
+      color: #666;
+    }
+
+    .steps .step {
+      text-align: center;
+    }
+
+    .steps .step.active {
+      color: orange;
+      font-weight: bold;
+    }
+
+    .card {
+      background-color: white;
+      max-width: 700px;
+      margin-left: 250px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .left {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .left img {
+      width: 50px;
+    }
+
+    .middle {
+      text-align: center;
+    }
+
+    .middle .time {
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    .middle .station {
+      font-size: 14px;
+    }
+
+    .duration {
+      font-size: 12px;
+      background: #eee;
+      padding: 4px 8px;
+      border-radius: 10px;
+      margin: 10px 0;
+    }
+
+    .price {
+      text-align: right;
+      font-size: 20px;
+      color: orange;
+      font-weight: bold;
+    }
+
+    .select-button {
+      margin-top: 10px;
+      background: orange;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .select-button:hover {
+      background-color: darkorange;
+    }
+
+    .trip-info {
+      display: none;
+    }
+
+    .trip-info.active {
+      display: block;
+    }
+     .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(4px);
+      z-index: 999;
+    }
+    .ticket-card {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: #fff;
+      padding: 30px 40px;
+      border-radius: 12px;
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+      z-index: 1000;
+      width: 400px;
+      max-width: 90%;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .ticket-card .close-btn {
+      position: absolute;
+      top: 12px;
+      right: 16px;
+      font-size: 20px;
+      cursor: pointer;
+      color: #888;
+      transition: color 0.3s ease;
+    }
+    .ticket-card .close-btn:hover {
+      color: #000;
+    }
+    .ticket-card input[type="number"] {
+      width: 80px;
+      padding: 8px 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      margin-left: 10px;
+    }
+    .ticket-card button {
+      background-color: #ffa500;
+      color: #fff;
+      border: none;
+      padding: 10px 16px;
+      margin-left: 15px;
+      border-radius: 6px;
+      font-size: 15px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .ticket-card button:hover {
+      background-color: #e69500;
+    }
+    .hidden {
+      display: none;
+    }
